@@ -1,0 +1,23 @@
+		  DES
+
+size		time (Enc)        time (Dec)(in ms)
+128 kb		0		0
+256 kb  	15		0
+1 mb		438		186
+2 mb		641 		465
+4 mb		937		576
+10 mb		1928 		1415
+
+
+
+			AES
+
+size 		time(enc)	time(Dec)(in ms)
+
+128		525		1
+258		552		2
+1 mb		943		217
+2 mb		1080		287
+4 mb		1237		351
+10 mb		2147		651
+

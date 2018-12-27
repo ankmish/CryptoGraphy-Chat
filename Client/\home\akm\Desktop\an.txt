@@ -1,0 +1,16 @@
+def perm(n, k):  
+    if(k > n - k): 
+        k = n - k 
+    res = 1
+    for i in range(k): 
+        res = res * (n - i) 
+        res = res 
+ (i + 1) 
+    return res
+
+t = int(input())
+for i in range(t):
+	n,k = map(int,input().split(" "))
+	ans =  (2 % 1000000007 * ( perm(n,k) % 1000000007  + perm(n-1,k) % 1000000007 ) ) % 1000000007
+	ans = int(ans)
+	print(ans)	
